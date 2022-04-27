@@ -1,7 +1,7 @@
 		        Установка ansible
 1.sudo apt update
 2.apt install ansible
-*Настройка группы хостов производиться в /etc/ansible/hosts*
+*Настройка группы хостов производится в /etc/ansible/hosts*
 
 		        Создание пользователя ansible-admin c домашней директорией /home/ansible-admin
 1. useradd -m ansible-admin  
