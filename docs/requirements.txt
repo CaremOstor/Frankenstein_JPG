@@ -1,0 +1,9 @@
+System requirements:
+
+1) One Ansible Master Node - ubuntu 20.04.3 or its equivalent
+2) From one to infinity client nodes(recommended 3) - ubuntu 20.04.3 or higher
+3) Client nodes have to be visible by Master node by their ip addresses 
+
+Have to be installed:
+1) ssh
+2) python3.6+
