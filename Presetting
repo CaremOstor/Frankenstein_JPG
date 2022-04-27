@@ -1,5 +1,5 @@
 		        Установка ansible
-1.sudo apt update
+1.sudo apt update && apt upgrade
 2.apt install ansible
 *Настройка группы хостов производится в /etc/ansible/hosts*
 
