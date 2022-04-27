@@ -1,10 +1,11 @@
-		        Установка ansible
-1.sudo apt update && apt upgrade
-2.sudo apt install ansible
-*Настройка группы хостов производится в /etc/ansible/hosts*
+#!/bin/bash
+sudo apt update && apt upgrade
+sudo apt install ansible 
+sudo useradd -m ansible-admin
+echo "Enter username of remote host and his ip address"
+read varname 
+read varname1
+echo "Username: $varname and his ip address: $varname1"
+ssh-keygen
+ssh-copy-id -i ~/.ssh/id_rsa.pub $varname@#varname1 -p 6576
 
-		        Создание пользователя ansible-admin c домашней директорией /home/ansible-admin
-1. sudo useradd -m ansible-admin  
-		        Настройка ssh ключей для взаимодействия ansible с хостами 
-1. Генерация ключей - ssh-keygen
-2. Копирование на удаленные хосты - sudo ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip_address -p 6576 
