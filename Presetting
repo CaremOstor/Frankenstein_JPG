@@ -4,7 +4,7 @@
 *Настройка группы хостов производится в /etc/ansible/hosts*
 
 		        Создание пользователя ansible-admin c домашней директорией /home/ansible-admin
-1. useradd -m ansible-admin  
+1. sudo useradd -m ansible-admin  
 		        Настройка ssh ключей для взаимодействия ansible с хостами 
 1. Генерация ключей - ssh-keygen
-2. Копирование на удаленные хосты - ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip_address -p 6576 
+2. Копирование на удаленные хосты - sudo ssh-copy-id -i ~/.ssh/id_rsa.pub user@ip_address -p 6576 
