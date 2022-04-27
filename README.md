@@ -1,6 +1,12 @@
 # Frankenstein_JPG
 ### JPG = Jenkins + Prometheus + Grafana
 
+#### Presettings
+Run presetting.sh bash-script for presettings.
+1) chmod +x presetting.sh
+2)./presetting.sh
+
+
 #### Run this playbook:
 For running this playbook type following command in your cmd
 1) Type ```ansible-playbook frankenstein.yml --ask-vault-pass``` in your cmd
