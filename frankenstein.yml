@@ -40,3 +40,24 @@
       daemon_reload: yes
       name: jenkins
       state: started
+      
+- name: Prometheus Installation
+  hosts: prometheus
+  become: yes
+  become_user: root
+  
+  tasks:
+    - name: prometheus
+      package:
+        name: prometheus
+        
+- name: Grafana Installation
+  hosts: prometheus
+  become: yes
+  become_user: root
+  
+  tasks:
+    - name: install grafana
+      snap:
+        name: grafana-ijohnson
+        classic: yes      
