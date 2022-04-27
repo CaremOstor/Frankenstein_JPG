@@ -1,8 +1,8 @@
 # Frankenstein_JPG
 ### JPG = Jenkins + Prometheus + Grafana
 
-#### Presettings:
-Run presetting.sh bash-script for presettings on the server.
+#### Presetting:
+Run presetting.sh bash-script for presetting on the server.
 1) chmod +x presetting.sh
 2) ./presetting.sh
 
