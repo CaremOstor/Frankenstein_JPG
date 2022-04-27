@@ -4,7 +4,7 @@
 #### Presettings:
 Run presetting.sh bash-script for presettings.
 1) chmod +x presetting.sh
-2)./presetting.sh
+2) ./presetting.sh
 
 
 #### Run this playbook:
