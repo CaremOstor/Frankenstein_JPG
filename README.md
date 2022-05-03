@@ -2,8 +2,9 @@
 
 #### Presetting:
 Run presetting.sh bash-script for presetting on the server.
-1) ```chmod +x presetting.sh```
-2) ```./presetting.sh```
+1)```sudo -i```
+2) ```chmod +x presetting.sh```
+3) ```./presetting.sh```
 
 
 #### Run this playbook:
