@@ -3,61 +3,19 @@
   hosts: jenkins
   become: yes
   become_user: root
+  roles:
+    - jenkins
 
-  tasks:
-
-  - name: Installed GPG
-    apt:
-      name: gpg
-      state: latest
-
-  - name: Imported Jenkins Keys
-    ansible.builtin.apt_key:
-      url: https://pkg.jenkins.io/debian-stable/jenkins.io.key
-      state: present
-
-  - name: Got Jenkins Repository
-    copy:
-      dest: "/etc/apt/sources.list.d/jenkins.list"
-      content: deb http://pkg.jenkins.io/debian-stable binary/
-
-  - name: Apt Updated
-    apt: 
-      update_cache: yes
-
-  - name: Installed Java
-    apt: 
-     name: openjdk-11-j* 
-     state: latest
-
-  - name: Installed Jenkins
-    apt: 
-      name: jenkins
-      state: latest
-
-  - name: Started Jenkins Daemon
-    ansible.builtin.systemd:
-      daemon_reload: yes
-      name: jenkins
-      state: started
-      
 - name: Prometheus Installation
   hosts: prometheus
   become: yes
   become_user: root
-  
-  tasks:
-    - name: prometheus
-      package:
-        name: prometheus
-        
+  roles:
+    - prometheus
+
 - name: Grafana Installation
-  hosts: prometheus
+  hosts: grafana
   become: yes
   become_user: root
-  
-  tasks:
-    - name: install grafana
-      snap:
-        name: grafana-ijohnson
-        classic: yes      
+  roles:
+    - grafana
