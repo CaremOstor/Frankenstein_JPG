@@ -1,0 +1,3 @@
+- name: Installded Prometheus Packages
+  package:
+    name: prometheus

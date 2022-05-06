@@ -1,0 +1,3 @@
+---
+# tasks file for jenkins
+- include: jenkins_installation.yml

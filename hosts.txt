@@ -1,11 +1,14 @@
 [jenkins]
-jenkins1 ansible_host=192.168.122.13 
+#jenkins1 ansible_host=192.168.122.13 
+localhost
 
 [grafana]
-grafana1 ansible_host=192.168.122.13
+#grafana1 ansible_host=192.168.122.13
+localhost
 
 [prometheus]
-prometheus1 ansible_host=192.168.122.13
+#prometheus1 ansible_host=192.168.122.13
+localhost
 
 [servers:children]
 jenkins
