@@ -8,9 +8,9 @@ else
 fi
 useradd -m ansible-admin 
 echo "Enter username of remote host and his ip address"
-read username 
-read ip_addr
-echo "Username: $username and his ip address: $ip_addr"
+read varname 
+read varname1
+echo "Username: $varname and his ip address: $varname1"
 File=/root/.ssh/id_rsa.pub
 if [ -f "$File "]
 then
@@ -18,5 +18,5 @@ then
 else
 ssh-keygen
 fi
-ssh-copy-id -i ~/.ssh/id_rsa.pub $username@$ip_addr -p 6576
+ssh-copy-id -i ~/.ssh/id_rsa.pub $varname@$varname1 -p 6576
 
