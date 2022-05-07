@@ -1,4 +1,0 @@
-- name: install grafana
-  snap:
-    name: grafana-ijohnson
-    classic: yes    
