@@ -18,7 +18,7 @@ echo "1 - Enter username and ip address of host"
 echo "2 - Enter subnet and subnet mask of your network"
 read variant;
 case $variant in
-  1) read -p "Username: " username && read -p "Ip address: " ip_addr && echo "ssh $username@$ip_addr";;
+  1) read -p "Username: " username && read -p "Ip address: " ip_addr && ssh-copy-id -i ~/.ssh/id_rsa.pub $username@$ip_addr -p 6576;;
   2) ping_check()
 {
   ping -c 1 $1 > /dev/null
