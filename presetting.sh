@@ -5,7 +5,8 @@ then
 else
  apt install ansible
 fi
-useradd -m ansible-admin 
+useradd -m -s /bin/bash ansible-admin
+passwd ansible-admin
 File=/root/.ssh/id_rsa.pub
 if [ -f "$File "]
 then
