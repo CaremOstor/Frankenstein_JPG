@@ -1,0 +1,3 @@
+---
+# tasks file for prometheus
+- include: prometheus_installation.yml
