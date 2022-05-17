@@ -1,4 +1,10 @@
 - name: install grafana
   snap:
     name: grafana-ijohnson
-    classic: yes    
+    classic: yes
+
+- name: Started Jenkins Daemon
+  ansible.builtin.systemd:
+    daemon_reload: yes
+    name: grafana-ijohnson
+    state: started
