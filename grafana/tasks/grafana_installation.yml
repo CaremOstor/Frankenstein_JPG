@@ -2,9 +2,5 @@
   snap:
     name: grafana-ijohnson
     classic: yes
-
-- name: Started Grafana Daemon
-  ansible.builtin.systemd:
-    daemon_reload: yes
-    name: grafana-ijohnson
-    state: started
+  notify:
+    - Started Grafana Daemon

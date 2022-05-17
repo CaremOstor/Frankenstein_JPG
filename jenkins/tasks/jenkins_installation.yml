@@ -26,9 +26,5 @@
   apt:
     name: jenkins
     state: latest
-
-- name: Started Jenkins Daemon
-  ansible.builtin.systemd:
-    daemon_reload: yes
-    name: jenkins
-    state: started
+  notify:
+    - Started Jenkins Daemon

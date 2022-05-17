@@ -1,2 +1,7 @@
 ---
 # handlers file for grafana
+- name: Started Grafana Daemon
+  ansible.builtin.systemd:
+    daemon_reload: yes
+    name: grafana-ijohnson
+    state: started

@@ -1,2 +1,7 @@
 ---
 # handlers file for jenkins
+- name: Started Jenkins Daemon
+  ansible.builtin.systemd:
+    daemon_reload: yes
+    name: jenkins
+    state: started
