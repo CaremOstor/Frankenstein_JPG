@@ -1,0 +1,5 @@
+1) test ansible roles
+Description: If JPG stack successfully instals on ubuntu client - OK
+
+2) test "Prometheus & Grafana service started"
+Description: If PG services starts with tasks in their roles - OK
