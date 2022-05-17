@@ -2,7 +2,7 @@
   package:
     name: prometheus
 
-- name: Started Jenkins Daemon
+- name: Started Prometheus Daemon
   ansible.builtin.systemd:
     daemon_reload: yes
     name: prometheus
